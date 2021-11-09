@@ -16,11 +16,11 @@ class CreatePacksTable extends Migration
         Schema::create('packs', function (Blueprint $table) {
             $table->id();
             $table->string("titolo", 100);
-            $table->string("descizione", 500);
+            $table->string("descrizione", 500);
             $table->string("durata", 30);
             $table->string("località", 40);
-            $table->year("data_di_partenza");
-            $table->year("data_di_ritorno");
+            $table->date("data_di_partenza");
+            $table->date("data_di_ritorno");
             $table->string("servizi", 200);
             $table->string("categoria", 50);
             $table->string("condizioni_meteo", 100);
